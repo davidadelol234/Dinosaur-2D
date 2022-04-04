@@ -69,7 +69,7 @@ public class player : MonoBehaviour
             Time.timeScale = 0;
             SceneManager.LoadScene("Game Over");
         }
-        if(collision.gameObject.CompareTag("pterodactyl"))
+        else if(collision.gameObject.CompareTag("pterodactyl"))
         {
             Debug.Log("collided with block");
             isAlive = false;
