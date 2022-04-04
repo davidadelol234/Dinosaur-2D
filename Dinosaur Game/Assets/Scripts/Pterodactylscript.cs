@@ -18,7 +18,7 @@ public class Pterodactylscript : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("nextLine"))
         {
-            
+            Debug.Log("Collision with nextLine");
             pterodactylGenerator.GenerateNextPterodactyl();
 
         }

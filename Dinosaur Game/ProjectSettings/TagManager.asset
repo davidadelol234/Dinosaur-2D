@@ -8,6 +8,7 @@ TagManager:
   - nextLine
   - block
   - pterodactyl
+  - dino
   layers:
   - Default
   - TransparentFX

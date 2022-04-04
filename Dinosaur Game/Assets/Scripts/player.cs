@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class player : MonoBehaviour
 {
 
@@ -32,16 +33,27 @@ public class player : MonoBehaviour
                 isGrounded = false;
             }
         }
+        else if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if(isGrounded == true)
+            {
+                RB.AddForce(Vector2.up * Jump);
+                isGrounded = false;
+            }
+        }
 
         if(isAlive)
         {
             score += Time.deltaTime * 4;
+            //Debug.Log(score);
             ScoreText.text = "SCORE : " + score.ToString("F");
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("SHOULD collide with block");
+
         if(collision.gameObject.CompareTag("ground"))
         {
             if(isGrounded == false)
@@ -52,8 +64,17 @@ public class player : MonoBehaviour
 
         if(collision.gameObject.CompareTag("block"))
         {
+            Debug.Log("collided with block");
             isAlive = false;
             Time.timeScale = 0;
+            SceneManager.LoadScene("Game Over");
+        }
+        if(collision.gameObject.CompareTag("pterodactyl"))
+        {
+            Debug.Log("collided with block");
+            isAlive = false;
+            Time.timeScale = 0;
+            SceneManager.LoadScene("Game Over");
         }
     }
 }
