@@ -6,6 +6,7 @@ public class BlockScript : MonoBehaviour
 {
 
     public BlockGenerator blockGenerator;
+    
 
     
 
@@ -20,6 +21,7 @@ public class BlockScript : MonoBehaviour
         if(collision.gameObject.CompareTag("nextLine"))
         {
             blockGenerator.GeneratNextBlock();
+            
 
         }
 

@@ -1,18 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{88C48749-309B-68DA-35AA-54D9D7A85703}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4987c488-9b30-da68-35aa-54d9d7a85703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{88C48749-309B-68DA-35AA-54D9D7A85703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88C48749-309B-68DA-35AA-54D9D7A85703}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88C48749-309B-68DA-35AA-54D9D7A85703}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88C48749-309B-68DA-35AA-54D9D7A85703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4987c488-9b30-da68-35aa-54d9d7a85703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4987c488-9b30-da68-35aa-54d9d7a85703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
