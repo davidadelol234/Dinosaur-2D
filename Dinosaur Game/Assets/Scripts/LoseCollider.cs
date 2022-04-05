@@ -6,12 +6,8 @@ public class LoseCollider : MonoBehaviour
 {
    private void OnTriggerEnter2D(Collider2D collision)
    {
-       Debug.Log("Collision detected");
-       Debug.Log(collision.transform.position);
-       if (collision.gameObject.CompareTag("nextLine")){
-
-       } else{
-       SceneManager.LoadScene("Game Over");
-       }
+      
+     
+       
    }
 }

@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 282e445d937ac5c4d837198afd7ca999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockGenerator: {fileID: 0}
+  blockGenerator: {fileID: 152964326, guid: 07fe4675b017c4b60a34a06431606c5f, type: 3}
 --- !u!114 &6923159841910092746
 MonoBehaviour:
   m_ObjectHideFlags: 0

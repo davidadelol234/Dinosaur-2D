@@ -5,7 +5,7 @@ public class player : MonoBehaviour
 {
 
     public float Jump;
-    float score;
+    public float score;
 
     [SerializeField] bool isGrounded = false;
     bool isAlive = true;
@@ -46,14 +46,13 @@ public class player : MonoBehaviour
         {
             score += Time.deltaTime * 4;
             //Debug.Log(score);
-            ScoreText.text = "SCORE : " + score.ToString("F");
+           ScoreText.text = "SCORE : " + score.ToString("F");
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("SHOULD collide with block");
-
+        
         if(collision.gameObject.CompareTag("ground"))
         {
             if(isGrounded == false)
@@ -62,19 +61,27 @@ public class player : MonoBehaviour
             }
         }
 
-        if(collision.gameObject.CompareTag("block"))
+ 
+        if(collision.gameObject.CompareTag("pterodactyl"))
         {
-            Debug.Log("collided with block");
+            Debug.Log("player collided with pterodactyl");
             isAlive = false;
             Time.timeScale = 0;
             SceneManager.LoadScene("Game Over");
         }
-        else if(collision.gameObject.CompareTag("pterodactyl"))
+        
+        else if(collision.gameObject.CompareTag("block"))
         {
-            Debug.Log("collided with block");
+            Debug.Log("player collided with block");
             isAlive = false;
             Time.timeScale = 0;
             SceneManager.LoadScene("Game Over");
         }
+    }
+
+   
+    public void ResetGame()
+    {
+        Destroy(gameObject);
     }
 }

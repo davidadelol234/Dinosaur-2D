@@ -27,6 +27,7 @@ public class BlockScript : MonoBehaviour
 
         if(collision.gameObject.CompareTag("Finish"))
         {
+            Debug.Log("Destroy block");
             Destroy(this.gameObject);
 
         }
