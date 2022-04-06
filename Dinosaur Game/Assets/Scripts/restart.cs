@@ -8,7 +8,7 @@ public class restart : MonoBehaviour
     
     public void LoadStartScene()
     {
-        SceneManager.LoadScene(0);
-        FindObjectOfType<player>().ResetGame();
+        SceneManager.LoadScene("Level 1");
+        //FindObjectOfType<player>().ResetGame();
     }
 }

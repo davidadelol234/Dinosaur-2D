@@ -46,7 +46,7 @@ public class player : MonoBehaviour
         {
             score += Time.deltaTime * 4;
             //Debug.Log(score);
-           ScoreText.text = "SCORE : " + score.ToString("F");
+            ScoreText.text = "SCORE : " + score.ToString("F");
         }
     }
 
@@ -71,6 +71,15 @@ public class player : MonoBehaviour
         }
         
         else if(collision.gameObject.CompareTag("block"))
+        {
+            Debug.Log("player collided with block");
+            isAlive = false;
+            Time.timeScale = 0;
+            ResetGame();
+            SceneManager.LoadScene("Game Over");
+        }
+
+        else if(collision.gameObject.CompareTag("spike"))
         {
             Debug.Log("player collided with block");
             isAlive = false;

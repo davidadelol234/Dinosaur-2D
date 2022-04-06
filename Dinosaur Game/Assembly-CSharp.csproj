@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\LoseCollider.cs" />
      <Compile Include="Assets\Scripts\PterodactylGenerator.cs" />
      <Compile Include="Assets\Scripts\Pterodactylscript.cs" />
+     <Compile Include="Assets\Scripts\SpikeGenerator.cs" />
+     <Compile Include="Assets\Scripts\SpikeScript.cs" />
      <Compile Include="Assets\Scripts\player.cs" />
      <Compile Include="Assets\Scripts\quit.cs" />
      <Compile Include="Assets\Scripts\restart.cs" />

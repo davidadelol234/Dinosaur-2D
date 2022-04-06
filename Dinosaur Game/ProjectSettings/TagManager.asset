@@ -9,6 +9,7 @@ TagManager:
   - block
   - pterodactyl
   - dino
+  - spike
   layers:
   - Default
   - TransparentFX
